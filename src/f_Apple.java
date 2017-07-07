@@ -7,6 +7,16 @@
  * Description:
  */
 class f_Apple extends Fruit {
-    String fruit_name = "Apple";
+    String name = "Apple";
     double cost = 1.00;
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public double getCost() {
+        return cost;
+    }
 }

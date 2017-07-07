@@ -6,8 +6,7 @@
  * Last Modified:
  * Description:
  */
-abstract class Fruit {
-    String fruit_name;
+abstract class Fruit extends Item{
     String fruit_type;
-    double cost;
 }
+

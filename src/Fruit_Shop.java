@@ -9,8 +9,13 @@ import java.util.Scanner;
  * Description:
  */
 class Fruit_Shop {
+    // Global variable for quitting.
     private boolean quit = false;
+    private boolean buying = false;
 
+    // private Cart cart; - this is yet to be implemented in a class
+
+    // Main function to be run, has a loop that continues until quit.
     void main(){
         greet(0);
         while (!quit) {
@@ -24,6 +29,7 @@ class Fruit_Shop {
         greet(1);
     }
 
+    // 'System' messages
     private void greet(int flag){
         if (flag == 0){
             String greeting = "Hello there, welcome to the fruit shop.";
@@ -34,12 +40,18 @@ class Fruit_Shop {
             String greeting = "Exiting the fruit shop...";
             System.out.println(greeting);
         }
-
     }
 
+    // Handling of string input.
     private void receive_input(String inputString){
         switch (inputString.toLowerCase()) {
             case "quit":    quit = true;
+
+            // placeholders, but a cart will be instantiated, and enable the other functions to used as input.
+            case "shop":    ;
+            case "add":     ;
+            case "remove":  ;
+            case "checkout":    ;
         }
     }
 }
